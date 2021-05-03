@@ -1,5 +1,5 @@
 # IT-Handbuch für Fachinformatiker*innen
-Alle Codebeispiele aus dem "IT-Handbuch für Fachinformatiker*innen"
+Alle Codebeispiele und Lösungen aus dem "IT-Handbuch für Fachinformatiker*innen"
 
 Ab dem 30.06.2021 finden Sie hier alle Codebeispiele.
 
