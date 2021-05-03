@@ -1,3 +1,5 @@
 # IT-Handbuch für Fachinformatiker*innen
-Alle Codebeispiele aus dem "IT-Handbuch für Fachinformatiker*innen", 10. Auflage
+Alle Codebeispiele aus dem "IT-Handbuch für Fachinformatiker*innen"
 
+Ab dem 30.06.2021 finden Sie hier alle Codebeispiele.
+![Cover von "IT-Handbuch für Fachinformatiker*innen" von Sascha Kersken, 10. Auflage (2021)](it-handbuch-10-small.png)
