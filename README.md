@@ -8,3 +8,6 @@ Ab dem 30.06.2021 finden Sie hier alle Codebeispiele sowie die Lösungen der Üb
 [Webseite zum IT-Handbuch beim Rheinwerk Verlag](https://www.rheinwerk-verlag.de/it-handbuch-fur-fachinformatikerinnen_5274/)
 
 Informationen und Materialien (Listing, Lösungen) zur noch erhältlichen 9. Auflage (2019) finden Sie [hier](https://www.rheinwerk-verlag.de/it-handbuch-fuer-fachinformatiker-der-ausbildungsbegleiter/).
+
+Fragen, Anmerkungen oder Errata zum Buch bitte per E-Mail an [mailto:it-handbuch@sascha-kersken.de](it-handbuch@sascha-kersken.de)
+Und/oder folgen Sie [https://twitter.com/ITHandbuch](@ITHandbuch) auf Twitter.
