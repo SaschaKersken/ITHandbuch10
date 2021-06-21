@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Erster Formulartest - Event-Handler im HTML-Attribut</title>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <h1>Der Gruß-o-Mat</h1>
+    <form name="form1">
+      Dein Name.:
+      <input type="text" name="user" size="40" />
+      <input type="button" value="OK" 
+      onclick="document.form1.greeting.value = 'Hallo '
+      + document.form1.user.value + '!';" />
+      <br />
+      <input type="text" name="greeting" size="60"
+      readonly="readonly" />
+    </form>
+  </body>
+</html>
+

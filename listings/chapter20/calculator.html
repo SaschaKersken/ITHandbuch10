@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript-Rechner</title>
+</head>
+<body>
+<form name="calculator">
+  1. Zahl:
+  <input type="text" name="z1" size="20" />
+  2. Zahl:
+  <input type="text" name="z2" size="20" />
+  <br />
+  <input type="button" value=" + " name="plusButton" />
+  <input type="button" value=" - " name="minusButton" />
+  <input type="button" value=" * " name="multiplyButton" />
+  <input type="button" value=" / " name="divideButton" />
+  <br />
+  <input type="text" name="result" size="40"
+  readonly="true" />
+</form>
+<script type="text/javascript">
+function calculate(op) {
+  // Eingaben lesen
+  var z1 = document.calculator.z1.value;
+  var z2 = document.calculator.z2.value;
+  // Sind es keine Zahlen?
+  if (z1 != parseFloat(z1) || z2 != parseFloat(z2)) {
+    // Mindestens eine ist keine Zahl!
+    document.calculator.result.value = "Keine Zahl!";
+    // Rücksprung aus der Funktion heraus
+    return;
+  }
+  // Wenn wir HIER sind, waren es Zahlen!
+  var result;
+  switch (op) {
+  case "+":
+    result = parseFloat(z1) + parseFloat(z2);
+    break;
+  case "-":
+    result = z1 - z2;
+    break;
+  case "*":
+    result = z1 * z2;
+    break;
+  case "/":
+    if (z2 == 0) {
+      result = "0 VERBOTEN!";
+    } else {
+      result = z1 / z2;
+    }
+    break;
+    default:
+    result = "KANN NICHT SEIN!";
+  }
+  document.calculator.result.value = result;
+}
+document.calculator.plusButton.addEventListener(
+  'click',
+  () => calculate('+')
+);
+document.calculator.minusButton.addEventListener(
+  'click',
+  () => calculate('-')
+);
+document.calculator.multiplyButton.addEventListener(
+  'click',
+  () => calculate('*')
+);
+document.calculator.divideButton.addEventListener(
+  'click',
+  () => calculate('/') 
+);
+</script>
+</body>
+</html>

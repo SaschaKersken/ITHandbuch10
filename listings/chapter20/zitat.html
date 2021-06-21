@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kleiner Ajax-Test</title>
+<meta charset="utf-8" />
+</head>
+<body>
+Hier steht ein dynamisch austauschbares Zufallszitat:
+<div id="zitat" style="color: #FF0000">&nbsp;</div>
+<a href="#" onclick="tauscheZitat();">Zitat wechseln</a>
+<script type="text/javascript">
+  // Ajax-Anfrageobjekt erzeugen
+  // Zunächst die Referenzvariable deklarieren
+  var anfrage = null;
+  try {
+    // Klasse für Firefox, Opera & Co.
+    anfrage = new XMLHttpRequest();
+  } catch(err_ff) {
+    try {
+      // Klasse für neuere IEs
+      anfrage = new ActiveXObject("Msxml2.XMLHTTP");
+    } catch(err_ms1) {
+      try {
+        // Klasse für ältere IEs
+        anfrage = new ActiveXObject("Microsoft.XMLHTTP");
+      } catch(err_all) {
+        // Inkompatibler Browser -- keine Klasse passt
+        anfrage = null;
+      }
+    }
+  }
+  if (anfrage == null) {
+    // Fehlermeldung, falls kein Anfrageobjekt erzeugt
+    alert("Sie verwenden einen nicht Ajax-fähigen Browser.");
+  }
+
+  // tauscheZitat(): Wird bei Klick auf einen Link
+  // aufgerufen; lädt neues Zitat per Ajax-Anfrage
+  function tauscheZitat() {
+    // URL mit Zeit als Cache-Schutz kombinieren
+    var url = "zitat.php?dummy=" + new Date().getTime();
+    // Anfrage eröffnen: Methode GET, URL, asynchron
+    anfrage.open ("GET", url, true);
+    // Callback-Funktion für Zustandswechsel festlegen
+    anfrage.onreadystatechange = holeZitat;
+    // Anfrage senden (mit leerem Body, da GET)
+    anfrage.send(null);
+  }
+
+  // holeZitat(): Callback-Funktion, die nach
+  // Ajax-Anfrage die Serverantwort ausliest und anzeigt
+  function holeZitat() {
+    // Nur aktiv werden, wenn Bereitschaftszustand 4
+    if (anfrage.readyState == 4) {
+      // Gültige Antwort (Status 200)?
+      if (anfrage.status == 200) {
+        // Text der Serverantwort auslesen
+        var antwort = anfrage.responseText;
+        // Zitat in das Dokument einfügen
+        document.getElementById("zitat").firstChild.nodeValue = antwort;
+      } else {
+        // Ungültige Antwort
+        alert("Fehlerhafte Serverantwort: " + anfrage.status);
+      }
+    }
+  }
+</script>
+</body>
+</html>
+

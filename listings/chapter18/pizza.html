@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <title>Pizza bestellen</title>
+  </head>
+  <body>
+    <h1>Pizza-Service online</h1>
+    <p>Konfigurieren Sie Ihre Pizza!</p>
+    <form action="#" method="GET">
+      <table border="0" cellpadding="4">
+        <tr>
+          <td colspan="3">W&auml;hlen Sie die
+          Gr&ouml;&szlig;e Ihrer Pizza:</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="psize"
+          value="s" />Mini (18 cm)<br />
+          Grundpreis: 3 &euro;</td>
+          <td><input type="radio" name="psize"
+          value="m" />Standard (24 cm)<br />
+          Grundpreis: 5 &euro;</td>
+          <td><input type="radio" name="psize"
+          value="l" />Family (32 cm)<br />
+          Grundpreis: 7 &euro;</td>
+        </tr>
+        <tr>
+          <td colspan="3">Jede Pizza ist mit K&auml;se
+            und Tomaten belegt.<br />
+          W&auml;hlen Sie hier weitere Bel&auml;ge (je
+          1,- &euro;)</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="belag"
+          value="spi" />Spinat</td>
+          <td><input type="checkbox" name="belag"
+          value="pil" />Pilze</td>
+          <td><input type="checkbox" name="belag"
+          value="pap" />Paprika</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="belag"
+          value="sal" />Salami</td>
+          <td><input type="checkbox" name="belag"
+          value="sch" />Schinken</td>
+          <td><input type="checkbox" name="belag"
+          value="thu" />Thunfisch</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="belag"
+          value="zwi" />Zwiebeln</td>
+          <td><input type="checkbox" name="belag"
+          value="xka" />Extra K&auml;se</td>
+          <td><input type="checkbox" name="belag"
+          value="xto" />Extra Tomaten</td>
+        </tr>
+        <tr>
+          <td colspan="3">Sind Sie bereits Kunde?</td>
+        </tr>
+        <tr>
+          <td>Ihr Username:</td>
+          <td colspan="2"><input type="text" name="kunde"
+          size="20" maxlength="10" /></td>
+        </tr>
+        <tr>
+          <td>Ihr Passwort:</td>
+          <td colspan="2"><input type="password"
+          name="pass" size="20" maxlength="8" /></td>
+        </tr>
+        <tr>
+          <td colspan="3">Oder sind Sie neu?
+          <a href="neukunde.htm">Hier klicken</a></td>
+        </tr>
+        <tr>
+          <td colspan="3">Weitere Sonderw&uuml;nsche,
+          Bemerkungen, Anregungen?<br />
+          <textarea name="bemerk" cols="50" rows="7"
+          wrap="virtual"></textarea></td>
+        </tr>
+        <tr>
+          <td>Die Bestellung:</td>
+          <td>
+            <input type="submit" value="Abschicken" />
+          </td>
+          <td>
+            <input type="reset" value="Verwerfen" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript-Uhr</title>
+</head>
+<body>
+<p id="clock">Uhrzeit</p>
+<script type="text/javascript">
+function displayTime()  {
+  var now = new Date();
+  var hour = now.getHours();
+  var minute = now.getMinutes();
+  var second = now.getSeconds();
+  var timeString = hour < 10 ? "0" : "";
+  timeString += hour + ":";
+  timeString += minute < 10 ? "0" : "";
+  timeString += minute + ":";
+  timeString += second < 10 ? "0" : "";
+  timeString += second;
+  document.getElementById("clock").firstChild.nodeValue = "Es ist " + 
+    timeString + " Uhr";
+  setTimeout (
+    () => displayTime(),
+    1000
+  );
+}
+
+document.addEventListener(
+  'DOMContentLoaded',
+  () => displayTime()
+);
+</script>
+</body>
+</html>

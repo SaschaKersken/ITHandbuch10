@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Auto/LKW als Klassen</title>
+</head>
+<body>
+<h1>Bitte Konsole öffnen</h1>
+<script type="text/javascript">
+class Car {
+  constructor() {
+    this.mileage = 0;
+  }
+
+  drive(km) {
+    this.mileage += km;
+  }
+}
+
+let car = new Car();
+car.drive(30);
+car.drive(50);
+console.log(car.mileage);
+
+class Truck extends Car {
+  constructor(t) {
+    super();
+    this.totalLoad = 0;
+    this.maxLoad = t;
+  }
+
+  load(t) {
+    // Negativer Wert? Betrag an unload() übergeben
+    if (t < 0) {
+      unload(Math.abs(t));
+      return;
+    }
+    if (this.totalLoad + t <= this.maxLoad) {
+      this.totalLoad += t;
+    } else {
+      console.error('Maximale Ladekapazität überschritten');
+    }
+  }
+
+  unload(t) {
+    // Negativer Wert? Betrag an load() übergeben
+    if (t < 0) {
+      load(Math.abs(t));
+    }
+    if (this.totalLoad - t >= 0) {
+      this.totalLoad -= t;
+    } else {
+      console.error('Versuch, nicht vorhandene Ladung zu entladen');
+    }
+  }
+}
+
+let truck = new Truck(7);
+truck.load(4);
+truck.load(2);
+console.log("Aktuelle Ladung: " + truck.totalLoad);
+// Zu viel aufladen, Fehlermeldung:
+truck.load(2);
+</script>
+</body>
+</html>

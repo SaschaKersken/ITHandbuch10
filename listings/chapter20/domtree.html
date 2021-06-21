@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>DOM-Baumdiagramm</title>
+    <meta charset="utf-8" />
+    <body>
+    <!-- Jetzt geht's los! -->
+    <font size="4" color="#FF0000">Hier sehen Sie
+    <i>die DOM-Baumstruktur <b>des aktuellen
+    <u>Dokuments</u></b></i>.</font>
+    <script type="text/javascript">
+        var infoWindow;
+
+        function initDOMTree() {
+           infoWindow = window.open("", "infoWindow", "width=400,height=400");
+           showDOMTree(document, 0);
+        }
+
+        function showDOMTree(currentNode, indentation) {
+           var type = currentNode.nodeType;
+           var typeText, info;
+           switch (type) {
+              case 1:
+                 typeText = "HTML-Tag";
+                 info = currentNode.nodeName;
+                 break;
+              case 3:
+                 typeText = "Text";
+                 info = currentNode.nodeValue;
+                 break;
+              case 8:
+                 typeText = "Kommentar";
+                 info = currentNode.nodeValue;
+                 break;
+              case 9:
+                 typeText = "Dokument";
+                 info = "Das ganze HTML-Dokument";
+                 break;
+              default:
+                 typeText = "Anderer Typ";
+                 info = "XML-Dokument?";
+           }
+           // Einrücken
+           for (let i = 0; i < indentation; i++) {
+              infoWindow.document.write("&nbsp;&nbsp;&nbsp;&nbsp;");
+           }
+           infoWindow.document.write("<b>" + typeText
+                + "</b> (<i>" + info + "</i>)<br />");
+           // Kinder rekursiv bearbeiten
+           if (currentNode.hasChildNodes()) {
+              for (let j = 0; j < currentNode.childNodes.length; j++) {
+                 showDOMTree(currentNode.childNodes[j], indentation + 1);
+              }
+           }
+        }
+
+        document.addEventListener(
+           'DOMContentLoaded',
+           initDOMTree
+        );
+    </script>
+  </head>
+
+  </body>
+</html>
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<comics>
+  <comic language="en-US">
+    <publisher>Marvel</publisher>
+    <series>The Amazing Spider-Man</series>
+    <format>Comic Book</format>
+    <issue>663</issue>
+    <title>The Return Of Anti-Venom</title>
+    <subtitle>Part One: The Ghost of Jean DeWolff</subtitle>
+    <authors>
+      <author role="Writer">Dan Slott</author>
+      <author role="Pencils">Giuseppe Camuncoli</author>
+    </authors>
+    <price currency="USD">3.99</price>
+  </comic>
+  <comic language="en-US">
+    <publisher>Marvel</publisher>
+    <series>Ultimate Spider-Man</series>
+    <format>Trade Paperback</format>
+    <issue original="1-13">1</issue>
+    <title>Ultimate Spider-Man</title>
+    <subtitle>Ultimate Collection</subtitle>
+    <authors>
+      <author role="Writer">Brian Michael Bendis</author>
+      <author role="Pencils">Mark Bagley</author>
+    </authors>
+    <price currency="USD">24.99</price>
+  </comic>
+  <comic language="en-US">
+    <publisher>DC Comics</publisher>
+    <series>Action Comics</series>
+    <format>Comic Book</format>
+    <issue>901</issue>
+    <title>Reign Of The Doomsdays</title>
+    <subtitle>Part 1</subtitle>
+    <authors>
+      <author role="Writer">Paul Cornell</author>
+      <author role="Artist">Kenneth Rocafort</author>
+      <author role="Artist">Jesus Merino</author>
+    </authors>
+    <price currency="USD">2.99</price>
+  </comic>
+  <comic language="en-US">
+    <publisher>Bongo Comics</publisher>
+    <series>Simpsons Comics</series>
+    <format>Comic Book</format>
+    <issue>178</issue>
+    <title>The Thingama-Bob From Outer Space</title>
+    <authors>
+      <author role="Writer">Eric Rogers</author>
+      <author role="Pencils">John Costanza</author>
+    </authors>
+    <price currency="USD">2.99</price>
+  </comic>
+</comics>

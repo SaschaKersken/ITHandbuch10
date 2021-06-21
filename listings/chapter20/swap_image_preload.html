@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Swap Image</title>
+</head>
+<body>
+<img src="vorher.gif" name="swapImage" width="100" height="40" alt="Austausch-Bild" />
+<script type="text/javascript">
+// loadImage zunächst global deklarieren
+var loadImage = new Image();
+
+// Laden, sobald der Rest des Dokuments geladen ist
+document.addEventListener(
+  'DOMContentLoaded',
+  function() {
+    loadImage.src = "nachher.gif";
+  }
+);
+
+// Die beiden Rollover-Event-Handler
+document.swapImage.addEventListener(
+  'mouseover',
+  () => document.swapImage.src = loadImage.src
+);
+document.swapImage.addEventListener(
+  'mouseout',
+  () => document.swapImage.src = "vorher.gif"
+);
+</script>
+</body>
+</html>

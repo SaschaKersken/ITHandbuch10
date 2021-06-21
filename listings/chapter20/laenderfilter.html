@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ajax-Länderfilter</title>
+<meta charset="utf-8" />
+</head>
+<body>
+<h1>Alle Staaten der Erde</h1>
+<form name="filter">
+Suchfilter:
+<input type="text" id="eingabe" name="eingabe" />
+<input type="button" id="resetter" value="Zurücksetzen "/>
+</form>
+<div id="laenderliste"></div>
+<span id="hauptstadt" style="position: absolute; top: 0px; left: 0px;
+visibility:hidden; background-color: #00FFFF">&nbsp;</span>
+<script type="text/javascript" src="ajax.js"></script>
+<script type="text/javascript" src="laender.js"></script>
+<script type="text/javascript">
+document.addEventListener(
+  'DOMDocumentLoaded',
+  liesStaaten()
+);
+document.addEventListener(
+  'keyup',
+  event => {
+    if (event.target == document.getElementById('eingabe')) {
+      filterListe();
+    }
+  }
+);
+document.getElementById('resetter').addEventListener(
+  'click',
+  loescheFilter()
+);
+</script>
+</body>
+</html>
+

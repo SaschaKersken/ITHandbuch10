@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Eine Geschichte in zwei Teilen</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div id="story"><p>Dies ist ein <i>kurzer</i>
+    Text. Er besteht aus zwei Teilen. Den zweiten Teil
+    können Sie durch Klick auf den Link "Weiter" lesen.</p></div>
+    <p id="weiterLink"><a href="javascript:weiter();">Weiter</a></p>
+    <script type="text/javascript">
+    function weiter() {
+      var k1 = document.createTextNode("Hier folgt der zweite Teil des ");
+      var k2 = document.createElement("b");
+      var k2a = document.createTextNode("kurzen");
+      k2.appendChild(k2a);
+      var k3 = document.createTextNode(" Textes.");
+      document.getElementById("story").replaceChild(
+        k1,
+        document.getElementById("story").firstChild
+      );
+      document.getElementById("story").appendChild(k2);
+      document.getElementById("story").appendChild(k3);
+      // Den nun zwecklos gewordenen "Weiter"-Link entfernen
+      var linkAbsatz = document.getElementById("weiterLink");
+      linkAbsatz.parentNode.removeChild(linkAbsatz);
+    }
+    </script>
+  </body>
+</html>
+

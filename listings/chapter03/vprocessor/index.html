@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Virtueller Prozessor</title>
+<meta charset="utf-8" />
+<style type="text/css">
+.processor {
+  border: 1px solid #000;
+  padding: 4px;
+}
+.processor td,th {
+  margin: 0;
+  border: 1px solid #000;
+  padding: 4px;
+  vertical-align: top;
+}
+.data,#memory {
+  line-height: 1.5em;
+}
+.col1 {
+  margin-left: 0;
+}
+.col2,.col3,.col4,.col5 {
+  margin-left: 70px;
+}
+.cell {
+  font-weight: bold;
+  padding: 3px;
+}
+.content {
+  border: 1px solid #000;
+  padding: 2px;
+}
+#sourceInput {
+  width: 400px;
+  height: 200px;
+}
+</style>
+</head>
+<body>
+<div id="editor">
+<form>
+<p>Enter source code</p>
+<div id="errors"></div>
+<p><textarea id="sourceInput"></textarea></p>
+<p><button id="run">Check and run</button></p>
+</div>
+</form>
+</div>
+<p>
+<a id="stopLink" href="#">STOP</a>
+|
+<a id="resetLink" href="#">RESET</a>
+|
+<a id="clearLink" href="#">CLEAR EDITOR</a>
+</p>
+<table class="processor">
+<tr>
+<th class="data">Registers</th>
+<td class="data" colspan="2" id="registers"></td>
+<tr>
+<th>Source</th>
+<th>Stack</th>
+<th>Memory</th>
+</tr>
+<tr>
+<td id="source"></td>
+<td id="stack"></td>
+<td id="memory"></td>
+</tr>
+</table>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

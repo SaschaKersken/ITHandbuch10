@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Aufdringliche Werbung</title>
+    <style type="text/css">
+    <!--
+
+       #werbung {
+          position: absolute;
+          top: 100px;
+          left: -200px
+       }
+
+    -->
+    </style>
+
+    <script language="JavaScript"
+    type="text/javascript">
+    <!--
+        // Aktuelle Position
+        var x = -200;
+
+        function werbungZeigen() {
+           x += 5;
+           document.getElementById ("werbung").style.
+                left = x + "px";
+           if (x >= 100)
+
+              setTimeout ("werbungSchliessen ();",
+                   5000);
+           else
+              setTimeout ("werbungZeigen ();", 50);
+        }
+
+        function werbungSchliessen() {
+           document.getElementById ("werbung")
+                .style.visibility = "hidden";
+        }
+
+        setTimeout ("werbungZeigen();", 3000);
+
+    //-->
+    </script>
+  </head>
+  <body>
+    <div id="werbung"><img src="werbung.gif"
+    width="198" height="198"></div>
+    ... beliebiger Inhalt ...
+  </body>
+</html>
+

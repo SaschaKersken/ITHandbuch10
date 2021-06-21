@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Einfacher JavaScript-Rechner</title>
+<meta charset="utf-8" />
+</head>
+<body>
+<h1>Einfacher Rechner</h1>
+<form name="rechner">
+  1. Zahl:
+  <input type="text" name="z1" size="20" />
+  2. Zahl:
+  <input type="text" name="z2" size="20" />
+  <br />
+  <input type="button" value=" + " name="plusButton" />
+  <input type="button" value=" - " name="minusButton" />
+  <input type="button" value=" * " name="multiplyButton" />
+  <input type="button" value=" / " name="divideButton" />
+  <br />
+  <input type="text" name="erg" size="40"
+  readonly="true" />
+</form>
+<script type="text/javascript">
+function rechnen(op) {
+   // Eingaben lesen
+   var z1 = document.rechner.z1.value;
+   var z2 = document.rechner.z2.value;
+   // Sind es keine Zahlen?
+   if (z1 != parseFloat(z1) || z2 != parseFloat(z2)) {
+      // Mindestens eine ist keine Zahl!
+      document.rechner.erg.value = "Keine Zahl!";
+      // Rücksprung aus der Funktion heraus
+      return;
+   }
+   // Wenn wir HIER sind, waren es Zahlen!
+   var erg;
+   switch (op) {
+      case "+":
+         erg = parseFloat(z1) + parseFloat(z2);
+         break;
+      case "-":
+         erg = z1 - z2;
+         break;
+      case "*":
+         erg = z1 * z2;
+         break;
+      case "/":
+         if (z2 == 0)
+            erg = "0 VERBOTEN!";
+         else
+            erg = z1 / z2;
+         break;
+      default:
+         erg = "KANN NICHT SEIN!";
+   }
+   document.rechner.erg.value = erg;
+}
+document.rechner.plusButton.addEventListener(
+  'click',
+  function() {
+    rechnen('+');
+  }
+);
+document.rechner.minusButton.addEventListener(
+  'click',
+  function() {
+    rechnen('-');
+  }
+);
+document.rechner.multiplyButton.addEventListener(
+  'click',
+  function() {
+    rechnen('*');
+  }
+);
+document.rechner.divideButton.addEventListener(
+  'click',
+  function() {
+    rechnen('/');
+  }
+);
+</script>
+</body>
+</html>

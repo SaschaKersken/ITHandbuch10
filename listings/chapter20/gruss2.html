@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Erster Formulartest – Event-Handler mit benannter Funktion</title>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <h1>Der Gruß-o-Mat</h1>
+    <form name="formular">
+      Dein Name:
+      <input type="text" name="user" size="40" />
+      <input type="button" name="okButton" value="OK" />
+      <br />
+      <input type="text" name="gruss" size="60"
+      readonly="readonly" />
+    </form>
+  </body>
+  <script type="text/javascript">
+    var clickHandler = function() {
+      document.formular.gruss.value = 'Hallo '
+        + document.formular.user.value + '!';
+    };
+    document.formular.okButton.addEventListener(
+      'click',
+      clickHandler
+    );
+  </script>
+</html>
+

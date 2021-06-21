@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS-Beispiellayout</title>
+  <meta charset="utf-8" />
+  <style type="text/css">
+  body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: #6f6;
+  }
+  .contentHolder {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+  }
+  .header {
+    height: 80px;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #66f;
+  }
+  .sidebar {
+    width: 250px;
+    min-height: 500px;
+    height: auto;
+    margin-right: 10px;
+    padding-left: 5px;
+    float: left;
+    font-size: 1.5em;
+    background-color: #ccc;
+  }
+  .sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .content {
+    min-height: 500px;
+    height: auto;
+    padding-right: 10px;
+  }
+  .clear {
+    clear: both;
+  }
+  </style>
+</head>
+<body>
+  <div class="contentHolder">
+    <div class="header">
+      <div>Dies ist der Seiten-Header für Logo etc.</div>
+    </div>
+    <div class="sidebar">
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+    </div>
+    <div class="content">
+      <h1>Hauptüberschrift</h1>
+      <p>Lorem ipsum …</p>
+      <!-- restlicher Inhalt -->
+    </div>
+    <div class="clear">&nbsp;</div>
+    <div class="footer">
+      <p>Dies ist der Footer. Copyright-Info etc. kommt hier
+      hin.</p>
+    </div>
+  </div>
+</body>
+</html>
+

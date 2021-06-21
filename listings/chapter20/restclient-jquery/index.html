@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Programmiersprachen</title>
+<meta charset="utf-8" />
+<style type="text/css">
+#output div {
+  margin-bottom: 0.5em;
+  padding: 0.3em;
+}
+#editor {
+  margin-bottom: 0.5em;
+  padding: 0.3em;
+}
+.even {
+  background-color: #ccc;
+}
+.odd {
+  background-color: #fff;
+}
+.neutral {
+  background-color: #ff6;
+}
+.success {
+  background-color: #6f6;
+}
+.error {
+  background-color: #f66;
+}
+</style>
+</head>
+<body>
+<h1>Programmiersprachen</h1>
+<div id="filter">
+<form>
+Filter:
+<input type="text" id="search" />
+<input type="button" id="reset" value="Zurücksetzen" />
+</form>
+</div>
+<a href="javascript:edit(0)">Sprache hinzufügen</a>
+<div id="editor" class="neutral">
+</div>
+<div id="output">&nbsp;</div>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="client.js"></script>
+</body>
+</html>
+

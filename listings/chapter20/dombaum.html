@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>DOM-Baumdiagramm</title>
+    <script language="JavaScript" type="text/javascript">
+    <!--
+
+        var infofenster;
+
+        function initDOMTree() {
+           infofenster =
+              open("", "", "width=400,height=400");
+           showDOMTree(document, 0);
+        }
+
+        function showDOMTree(knoten, indentation)  {
+           var typ = knoten.nodeType;
+           var typtext, info;
+           switch (typ) {
+              case 1:
+                 typtext = "HTML-Tag";
+                 info = knoten.nodeName;
+                 break;
+              case 3:
+                 typtext = "Text";
+                 info = knoten.nodeValue;
+                 break;
+
+
+              case 8:
+                 typtext = "Kommentar";
+                 info = knoten.nodeValue;
+                 break;
+              case 9:
+                 typtext = "Dokument";
+                 info = "Das ganze HTML-Dokument";
+                 break;
+              default:
+                 typtext = "Anderer Typ";
+                 info = "XML-Dokument?";
+           }
+           // Einrücken
+           for (var i = 0; i < indentation; i++) {
+              infofenster.document.write
+                   ("&nbsp;&nbsp;&nbsp;&nbsp;");
+           }
+           infofenster.document.write("<b>" + typtext
+                + "</b> (<i>" + info + "</i>)<br />");
+           // Kinder rekursiv bearbeiten
+           if (knoten.hasChildNodes()) {
+              for (var j = 0;
+                   j < knoten.childNodes.length; j++) {
+                 showDOMTree(knoten.childNodes[j],
+                    indentation + 1);
+              }
+           }
+        }
+
+    //-->
+    </script>
+  </head>
+
+  <body onload="initDOMTree();">
+    <!-- Jetzt geht's los! -->
+    <font size="4" color="#FF0000">Hier sehen Sie
+    <i>die DOM-Baumstruktur <b>des aktuellen
+   <u>Dokuments</u></b></i>.</font>
+  </body>
+</html>
+
