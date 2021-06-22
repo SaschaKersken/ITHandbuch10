@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE albums SYSTEM "music.dtd">
+<albums>
+<album media="CD">
+<title>The Human Equation</title>
+<artist>Ayreon</artist>
+<year>2004</year>
+<tracklist>
+<track duration="1:33">Day One: Vigil</track>
+<track duration="8:42">Day Two: Isolation</track>
+<track duration="4:58">Day Three: Pain</track>
+<track duration="5:37">Day Four: Mystery</track>
+<track duration="7:09">Day Five: Voices</track>
+<track duration="5:05">Day Six: Childhood</track>
+<track duration="2:47">Day Seven: Hope</track>
+<track duration="4:22">Day Eight: School</track>
+<track duration="2:15">Day Nine: Playground</track>
+<track duration="3:57">Day Ten: Memories</track>
+<track duration="4:18">Day Eleven: Love</track>
+<track duration="9:54">Day Twelve: Trauma</track>
+<track duration="4:47">Day Thirteen: Sign</track>
+<track duration="4:42">Day Fourteen: Pride</track>
+<track duration="5:24">Day Fifteen: Betrayal</track>
+<track duration="4:46">Day Sixteen: Loser</track>
+<track duration="5:42">Day Seventeen: Accident?</track>
+<track duration="4:31">Day Eighteen: Realization</track>
+<track duration="4:42">Day Nineteen: Disclosure</track>
+<track duration="7:03">Day Twenty: Confrontation</track>
+</tracklist>
+</album>
+<album media="CD">
+<title>Metropolis Pt. 2: Scenes From A Memory</title>
+<artist>Dream Theater</artist>
+<year>1999</year>
+<tracklist>
+<track duration="2:06">Scene One: Regression</track>
+<track duration="3:37">Scene Two: I. Overture 1928</track>
+<track duration="5:12">Scene Two: II. Strange Deja Vu</track>
+<track duration="1:02">Scene Three: I. Through My Words</track>
+<track duration="6:49">Scene Three: II. Fatal Tragedy</track>
+<track duration="11:22">Scene Four: Beyond This Life</track>
+<track duration="5:29">Scene Five: Through Her Eyes</track>
+<track duration="12:53">Scene Six: Home</track>
+<track duration="6:13">Scene Seven: I. The Dance of Eternity</track>
+<track duration="3:46">Scene Seven: II. One Last Time</track>
+<track duration="6:38">Scene Eight: The Spirit Carries On</track>
+<track duration="11:59">Scene Nine: Finally Free</track>
+</tracklist>
+</album>
+<album media="CD">
+<title>The Book of Souls</title>
+<artist>Iron Maiden</artist>
+<year>2015</year>
+<tracklist>
+<track duration="8:28">If Eternity Should Fail</track>
+<track duration="5:01">Speed of Light</track>
+<track duration="6:37">The Great Unknown</track>
+<track duration="3:33">The Red and the Black</track>
+<track duration="5:52">When the River Runs Deep</track>
+<track duration="0:27">The Book of Souls</track>
+<track duration="5:13">Death or Glory</track>
+<track duration="7:32">Shadows of the Valley</track>
+<track duration="4:59">Tears of a Clown</track>
+<track duration="6:28">The Man of Sorrows</track>
+<track duration="8:01">Empire of the Clouds</track>
+</tracklist>
+</album>
+</albums>

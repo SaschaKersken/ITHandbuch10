@@ -1,0 +1,8 @@
+<!ELEMENT albums (album+)>
+  <!ELEMENT album (title, artist?, tracklist)>
+  <!ATTLIST album media CDATA #REQUIRED>
+    <!ELEMENT title #PCDATA>
+    <!ELEMENT artist #PCDATA>
+    <!ELEMENT tracklist (track+)>
+      <!ELEMENT track (artist?, #PCDATA)>
+      <!ATTLIST track duration CDATA #REQUIRED>

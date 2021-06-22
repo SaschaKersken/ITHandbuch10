@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Datum und Uhrzeit</title>
+  </head>
+  <body onload="showDateTime();">
+    <div id="datumzeit" onclick="changeMode();"></div>
+    <script type="text/javascript">
+      mode = 'time';
+
+      function changeMode() {
+        mode = mode == 'time' ? 'date' : 'time';
+      }
+
+      function showDateTime() {
+        var d = new Date();
+        if (mode == 'time') {
+          document.getElementById("datumzeit").innerHTML = formatTime(d);
+        } else {
+          document.getElementById("datumzeit").innerHTML = formatDate(d);
+        }
+        setTimeout("showDateTime();", 1000);
+      }
+
+      function formatTime(d) {
+        var h = d.getHours();
+        var m = d.getMinutes();
+        var s = d.getSeconds();
+        var result = h < 10 ? "0" + h : h;
+        result += ":";
+        result += m < 10 ? "0" + m : m;
+        result += ":";
+        result += s < 10 ? "0" + s : s;
+        return result;
+      }
+
+      function formatDate(d) {
+        var weekdays = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
+        var weekday = d.getDay();
+        var day = d.getDate();
+        var month = d.getMonth() + 1;
+        var year = d.getFullYear();
+        var result = weekdays[weekday];
+        result += ", ";
+        result += day < 10 ? "0" + day : day;
+        result += ".";
+        result += month < 10 ? "0" + month : month;
+        result += ".";
+        result += year;
+        return result;
+      }
+    </script>
+  </body>
+</html>
