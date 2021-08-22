@@ -5,6 +5,8 @@ Das ist Absicht - denn unter allen, die bis einschließlich 15.09. eine der Prog
 meines neuen Buches "[Daten- und Prozessanalyse für Fachinformatiker*innen](https://www.rheinwerk-verlag.de/daten-und-prozessanalyse-fuer-fachinformatiker/)",
 das Ende August erscheint.
 
+Lösungen bitte bis einschließlich 15.09.2021, 23:59 Uhr per E-Mail an it-handbuch(at)sascha-kersken(punkt)de schicken.
+
 Die Programmiersprache dürfen Sie auch jenseits von Java und Python frei wählen. Der Rechtsweg ist ausgeschlossen.
 
 ## Viel Erfolg! ##
