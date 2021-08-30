@@ -5,8 +5,8 @@ Korrekt muss er heißen: "Angenommen, in einer Urne befänden sich vier rote, zw
 ## S. 103, lineare Gleichung in der Mitte ##
 Die ursprüngliche Gleichung lautet *-2x + 5 = 0*. Das bedeutet, dass die nachfolgende Berechnung falsch ist, weil im ersten Schritt natürlich auf beiden Seiten 5 abgezogen statt addiert werden muss:<br />
 *-2x + 5 = 0 | -5*<br />
-*<=> -2x = -5 | /(-2)<br />
-*<=> x = (-5) / (-2) = 5/2*
+ *<=> -2x = -5 | /(-2)<br />
+ *<=> x = (-5) / (-2) = 5/2*
 ## S. 109, Aufzählungspunkt 1 ##
 Die erste größere Hexadezimalstelle (4.096) ist nicht, wie irrtümlich angegeben, 16<sup>2</sup>, sondern 16<sup>3</sup>. Wie es weiter korrekt heißt, gilt 16<sup>2</sup>=256.
 ## S. 770, Überschrift 'Arbeitszerlegung' ##
