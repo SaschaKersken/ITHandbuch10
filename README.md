@@ -4,8 +4,6 @@ Alle Codebeispiele und Lösungen aus dem "IT-Handbuch für Fachinformatiker*inne
 Hier finden Sie alle Codebeispiele sowie die meisten Lösungen der Übungsaufgaben und Kontrollfragen.<br />
 Einige Lösungen folgen noch, denn sie werden mit ausführlichen Erläuterungen versehen.
 
-**Aktuell: [Summer Coding Contest](contest.md)**
-
 ![Cover von "IT-Handbuch für Fachinformatiker*innen" von Sascha Kersken, 10. Auflage (2021)](it-handbuch-10-small.png)
 
 [Webseite zum IT-Handbuch beim Rheinwerk Verlag](https://www.rheinwerk-verlag.de/it-handbuch-fur-fachinformatikerinnen_5274/)
