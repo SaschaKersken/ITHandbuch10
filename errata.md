@@ -3,7 +3,7 @@
 ### S. 246, zweiter Absatz ###
 Der Absatz beginnt mit "SmNoch". Korrekt muss er mit "Noch" beginnen (offenbar ein Überbleibsel eines gelöschten Wortes).
 ### S. 522, erstes Codebeispiel ###
-Vor dem Ausrufezeichen fehlt das öffnende Fragezeichen. Richtig muss die Zeile wie folgt lauten:<br />
+Vor dem Ausrufezeichen fehlt das öffnende Anführungszeichen. Richtig muss die Zeile wie folgt lauten:<br />
 *System.out.println("Hallo " + planet + "!"); // Hallo Welt!*
 ### S. 555, Aufgabe 8 ###
 Im Aufgabentext wird nach der Variablen *result* gefragt, während es im Code *ergebnis* heißt. Dies sollte zu *result* vereinheitlicht werden.
