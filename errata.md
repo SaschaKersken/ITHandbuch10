@@ -1,5 +1,8 @@
 # Errata #
 ## Im 1. korrigierten Nachdruck (ab 12/2021) weiter vorhanden ##
+### S. 85 unten ###
+Im zweiten Beispiel zur pq-Formel wurde leider versehentlich mit q=-2 statt q=-4 gerechnet. Da die Korrektur etwas umfangreicher ist, hier als Screenshot aus dem Manuskript:<br />
+![Korrektur des zweiten pq-Formel-Beispiels von S. 85 unten](pq-korrektur.png)
 ### S. 246, zweiter Absatz ###
 Der Absatz beginnt mit "SmNoch". Korrekt muss er mit "Noch" beginnen (offenbar ein Überbleibsel eines gelöschten Wortes).
 ### S. 522, erstes Codebeispiel ###
