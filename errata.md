@@ -25,6 +25,10 @@ Die erste größere Hexadezimalstelle (4.096) ist nicht, wie irrtümlich angegeb
 Die Jahreszahl ist falsch. Es muss "Arbeitszerlegung (seit 1900)" heißen.
 
 ---
+## Errata in den Online-Lösungen ##
+Die korrekte Lösung der Multiple-Choice-Aufgabe 36 zu Kapitel 5, "Netzwerkgrundlagen", ist die zweite (128-191). Dies wird sobald wie möglich im Download-PDF korrigiert.
+
+---
 
 ## Selbst einen Fehler gefunden? ##
 Bitte per E-Mail an [it-handbuch@sascha-kersken.de](mailto:it-handbuch@sascha-kersken.de). Vielen Dank!
