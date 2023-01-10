@@ -1,4 +1,7 @@
 # Errata #
+## Im 2. korrigierten Nachdruck (ab Frühling 2022) weiter vorhanden ##
+### S. 87, erster Absatz ###
+Am Ende des Absatzes habe ich die Zähler der beiden Wahrscheinlichkeitsbrüche versehentlich addiert statt multipliziert, was sowohl das Ergebnis als auch die aus diesem abgeleitete Aussage falsch macht. Korrigiert muss es so lauten: "Die Gesamtwahrscheinlichkeit beträgt in diesem Fall also _1/2 * 3/7 = 3/14_ und ist damit etwas _ungünstiger_ als beim Ziehen mit Zurücklegen (1/4 = 7/28 vs. 3/14 = 6/28).
 ## Im 1. korrigierten Nachdruck (ab 12/2021) weiter vorhanden ##
 ### S. 85 unten ###
 Im zweiten Beispiel zur pq-Formel wurde leider versehentlich mit q=-2 statt q=-4 gerechnet. Da die Korrektur etwas umfangreicher ist, hier als Screenshot aus dem Manuskript:<br />
