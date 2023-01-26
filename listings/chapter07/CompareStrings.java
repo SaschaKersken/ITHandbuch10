@@ -1,6 +1,5 @@
 public class CompareStrings {
     public static void main(String args[]) {
-        System.out.println(a);
         if (args.length < 2) {
             System.out.println("Please provide at least 2 strings.");
         } else if (args[0].compareTo(args[1]) < 0) {
