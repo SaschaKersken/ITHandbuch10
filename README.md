@@ -1,6 +1,8 @@
 # IT-Handbuch für Fachinformatiker*innen
 Alle Codebeispiele und Lösungen aus dem "IT-Handbuch für Fachinformatiker*innen"
 
+[Zur aktuellen Auflage](https://github.com/SaschaKersken/ITHandbuch11)
+
 Hier finden Sie alle Codebeispiele sowie die meisten Lösungen der Übungsaufgaben und Kontrollfragen.<br />
 Einige Lösungen folgen noch, denn sie werden mit ausführlichen Erläuterungen versehen.
 
