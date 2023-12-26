@@ -14,5 +14,4 @@ Einige Lösungen folgen noch, denn sie werden mit ausführlichen Erläuterungen 
 
 Informationen und Materialien (Listing, Lösungen) finden Sie auch [hier](https://www.rheinwerk-verlag.de/it-handbuch-fuer-fachinformatiker-der-ausbildungsbegleiter/). Klicken Sie dort auf den Reiter "Materialien", um die Materialien zur aktuellen Auflage herunterzuladen, und auf den darunter befindlichen Link "Hier finden Sie die Materialien zu früheren Auflagen des Buches", um die Materialien zu früheren Auflagen zu erhalten.
 
-Fragen, Anmerkungen oder Errata zum Buch bitte per E-Mail an [it-handbuch@sascha-kersken.de](mailto:it-handbuch@sascha-kersken.de).<br />
-Und/oder folgen Sie [@ITHandbuch](https://twitter.com/ITHandbuch) auf Twitter.
+Fragen, Anmerkungen oder Errata zum Buch bitte per E-Mail an [it-handbuch@sascha-kersken.de](mailto:it-handbuch@sascha-kersken.de).
